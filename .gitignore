@@ -1,0 +1,42 @@
+node_modules/
+dist/
+.env
+.env.local
+.env.pre-prod
+.env.prod
+.env.*.local
+*.env
+pgdata/
+.DS_Store
+tsconfig.tsbuildinfo
+
+# Docker Compose per-developer local overrides
+infra/docker/docker-compose.override.yml
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+
+# Frontend build outputs
+apps/web/build/
+apps/web/.next/
+
+tmp/
+results/
+test-results/
+
+# Playwright
+apps/web/e2e/.auth/
+apps/web/playwright-report/
+apps/web/e2e-results.xml
+apps/web/test-results/
+
+# Generated documentation screenshots (regenerated via npm run screenshots)
+docs/screenshots/
+
+# Claude Code local settings (machine-specific paths)
+.claude/
+scripts/__pycache__/
+apps/web/public/swagger-ui/
