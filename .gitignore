@@ -1,5 +1,6 @@
 node_modules/
 dist/
+.vscode
 .env
 .env.local
 .env.pre-prod
@@ -9,6 +10,7 @@ dist/
 pgdata/
 .DS_Store
 tsconfig.tsbuildinfo
+.next
 
 # Docker Compose per-developer local overrides
 infra/docker/docker-compose.override.yml
